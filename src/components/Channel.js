@@ -36,7 +36,7 @@ function Channel() {
       style={{ backgroundColor: "#eee", height: "100%" }}
     >
       <div className="d-flex justify-content-end">
-        <button onClick={handleSignOut} className="btn btn-primary mt-3">
+        <button onClick={handleSignOut} className="btn btn-dark fw-bold mt-3">
           Logout
         </button>
       </div>
@@ -48,13 +48,13 @@ function Channel() {
             style={{ borderRadius: "15px", marginTop: "5rem"}}
           >
             <div
-              className="card-header d-flex justify-content-between align-items-center p-3 bg-info text-white border-bottom-0"
+              className="card-header d-flex justify-content-between align-items-center p-3 bg-dark text-white border-bottom-0"
               style={{
                 borderTopLeftRadius: "15px",
                 borderTopRightRadius: "15px",
               }}
             >
-              <p className="mb-0 fw-bold mx-auto">Awesome Chatter</p>
+              <p className="mb-0 fw-bold mx-auto">Let's Chat with us !</p>
             </div>
             <main>
               {messages &&

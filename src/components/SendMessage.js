@@ -4,7 +4,7 @@ import { auth, db } from "../firebase";
 
 function SendMessage({ scroll }) {
   const input = useRef();
-  console.log(auth.currentUser.photoURL);
+  console.log(auth.currentUser);
 
   const sendMessage = async (e) => {
     e.preventDefault();
@@ -43,7 +43,7 @@ function SendMessage({ scroll }) {
             // onChange={(e) => setInput(e.target.value)}
             />
             <span
-              className="fa fa-paper-plane messageSendButton"
+              className="text-dark fa fa-paper-plane messageSendButton"
               onClick={sendMessage}
             ></span>
           </div>

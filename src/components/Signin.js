@@ -29,7 +29,7 @@ const Signin = () => {
         Please Sign In : 
         <div className='ms-5'
         style={{ marginTop: "12rem" }}>
-      <GoogleButton onClick={handleGoogleSignIn}/>
+      <GoogleButton className='bg-dark rounded' onClick={handleGoogleSignIn}/>
       </div>
       </div>
 
