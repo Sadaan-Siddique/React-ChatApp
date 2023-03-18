@@ -2,7 +2,7 @@ import React from "react";
 import { auth } from "../firebase";
 
 function Message({ message }) {
-
+  console.log(message)
   const style = {
     sent: "card-body d-flex flex-row-reverse justify-content-end mt-5",
     received: "card-body d-flex flex-row justify-content-end mt-5",
@@ -39,18 +39,22 @@ function Message({ message }) {
     <div className={`${messageClass}`}>
       <p className={`${messageText}`} style={{ borderRadius: "15px" }}>
         {timestamp && (
-          <span className={`${messageName}`} style={{ color: "gray" }}>
-            {message.name} &#x2022;{" "}
-            {timestamp.toLocaleString("en-US", {
-              hour: "numeric",
-              minute: "numeric",
-            })}
-          </span>
+          <>
+            <img style={{height:'25px',borderRadius:'10px'}} src={message.photo} alt="img" />
+
+            <span className={`${messageName} mt-2`} style={{ color: "gray" }}>
+              {message.name} &#x2022;{" "}
+              {timestamp.toLocaleString("en-US", {
+                hour: "numeric",
+                minute: "numeric",
+              })}
+            </span>
+          </>
         )}
         {message.text}
       </p>
-      
-  {/* <img
+
+      {/* <img
     src={""}
     alt="Profile Picture"
     style={{ width: "45px", height: "100%", borderRadius: '35px' }}
