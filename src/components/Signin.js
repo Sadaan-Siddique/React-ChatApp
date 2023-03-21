@@ -23,7 +23,7 @@ const Signin = () => {
 
   return (
     <>
-    <div className="container-fluid d-flex justify-content-center"
+    <div className=" d-flex justify-content-center"
     style={{ backgroundColor: "#eee", height: "100vh" }}>
       <div className='display-4 fw-bold align-items-center mt-3'>
         Please Sign In : 
